@@ -17,4 +17,20 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult elegirPalabra()
+    {
+        int num;
+        Random r = new Random();
+        num = r.Next(1, 5);
+        public static string palabraAdivinar = CargarPalabras.listaPalabras[num];
+    }
+    public IActionResult ingresarLetra(char letra)
+    {
+        if
+        return View();
+    }
+    public IActionResult ingresarPalabra(string palabra)
+    {
+        return View();
+    }
 }
