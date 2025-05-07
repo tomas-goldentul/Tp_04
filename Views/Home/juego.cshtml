@@ -1,0 +1,22 @@
+@if(ViewBag.letrasAdivinadas == null){
+    for (int i = 0; i < @ViewBag.palabraAdivinar.Length; i++){
+        <p>_</p>
+    }
+}
+<p>@ViewBag.palabraAdivinar</p>
+
+
+<form action='@Url.Action("ingresarLetra", "Home")' method="GET">
+<input type = "text" name = "letra">
+<input type = "submit" name = "Guardar">
+</form>
+<form action='@Url.Action("ingresarPalabra", "Home")' method="GET">
+<input type = "text" name = "palabra">
+<input type = "submit" name = "Guardar">
+</form>
+
+
+
+
+
+
