@@ -18,12 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = Z:\prog\Tp_04
 build_property._RazorSourceGeneratorDebug = 
 
+[Z:/prog/Tp_04/Views/Home/derrota.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkZXJyb3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [Z:/prog/Tp_04/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [Z:/prog/Tp_04/Views/Home/juego.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxqdWVnby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/prog/Tp_04/Views/Home/victoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx2aWN0b3JpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [Z:/prog/Tp_04/Views/Shared/_Layout.cshtml]
