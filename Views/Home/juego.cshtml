@@ -1,3 +1,21 @@
+@if(ViewBag.palabraJugada == null){
+    foreach(char letra in ViewBag.palabraAdivinar){
+    <p>_</p>
+    }
+}
+else{
+@foreach (char letra in ViewBag.palabraJugada){
+<p>@letra</p>
+}
+}
+@if (ViewBag.letrasErradas != null){
+foreach (char letraa in ViewBag.letrasErradas){
+    <p>@letraa</p>
+}
+}
+else{
+    <p>No hay letras erradas</p>
+}
 
 <form action='@Url.Action("ingresarLetra", "Home")' method="GET">
 <input type = "text" name = "letra">

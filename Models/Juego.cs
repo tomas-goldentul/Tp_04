@@ -1,9 +1,9 @@
 class Juego
 {
-        public static string palabraAdivinar {get;set;}
-        public static List<char> letrasAdivinadas {get;set;}
-        public static List<char> palabraJugada {get;set;}
-        public static List<char> letrasErradas {get;set;}
+    public static string palabraAdivinar { get; set; }
+    public static List<char> letrasAdivinadas { get; set; } = new List<char>();
+    public static List<char> palabraJugada { get; set; } = new List<char>();
+    public static List<char> letrasErradas { get; set; } = new List<char>();
 
     public static void crearRandom()
     {
@@ -12,13 +12,15 @@ class Juego
         num = r.Next(0, CargarPalabras.listaPalabras.Count);
         palabraAdivinar = CargarPalabras.listaPalabras[num];
     }
-    public static void ingresarLetra(char letra){
-         
+    public static bool ingresarLetra(char letra)
+    {
+        bool finalizo = false;
+        palabraJugada.Clear();
         if (palabraAdivinar.Contains(letra))
         {
             letrasAdivinadas.Add(letra);
         }
-        else
+        else if(!letrasErradas.Contains(letra))
         {
             letrasErradas.Add(letra);
         }
@@ -31,13 +33,20 @@ class Juego
             }
             else
             {
+
                 palabraJugada.Add('_');
             }
 
         }
+        if (!palabraJugada.Contains('_'))
+        {
+            finalizo = true;
+        }
+        return finalizo;
     }
-    public static bool ingresarPalabra(string palabra){
-      bool adivino = false;
+    public static bool ingresarPalabra(string palabra)
+    {
+        bool adivino = false;
         if (palabra == palabraAdivinar)
         {
             adivino = true;
