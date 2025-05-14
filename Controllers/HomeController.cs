@@ -61,6 +61,9 @@ public class HomeController : Controller
         ViewBag.palabraAdivinar = Juego.palabraAdivinar;
         return View();
     }
+    public IActionResult creditos(){
+        return View();
+    }
 }
 
 

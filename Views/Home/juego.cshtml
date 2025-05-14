@@ -1,32 +1,46 @@
+<section>
+<div>
+
 @if(ViewBag.palabraJugada == null){
     foreach(char letra in ViewBag.palabraAdivinar){
-    <p>_</p>
-    }
+        <p style="display: inline; margin-right: 5px;">_</p>     }
 }
 else{
 @foreach (char letra in ViewBag.palabraJugada){
-<p>@letra</p>
+ <p style="display: inline; margin-right: 5px;">@letra</p> 
 }
 }
+</div>
+</section>
+<section>
+<div>
 @if (ViewBag.letrasErradas != null){
 foreach (char letraa in ViewBag.letrasErradas){
-    <p>@letraa</p>
+    <p style="display: inline; margin-right: 5px;">@letraa</p> 
 }
 }
 else{
     <p>No hay letras erradas</p>
 }
+</div>
+</section>
 
+<section>
+<div>
 <form action='@Url.Action("ingresarLetra", "Home")' method="GET">
-<input type = "text" name = "letra">
+<input type = "text" name = "letra" placeholder ="ingrese una letra">
 <input type = "submit" name = "Guardar">
 </form>
+</div>
+</section>
+<section>
+<div>
 <form action='@Url.Action("ingresarPalabra", "Home")' method="GET">
-<input type = "text" name = "palabra">
+<input type = "text" name = "palabra" placeholder ="arriesgar palabra">
 <input type = "submit" name = "Guardar">
 </form>
-
-<p>@ViewBag.palabraAdivinar</p>
+</div>
+</section>
 
 
 

@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = Z:\prog\Tp_04
 build_property._RazorSourceGeneratorDebug = 
 
+[Z:/prog/Tp_04/Views/Home/creditos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjcmVkaXRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [Z:/prog/Tp_04/Views/Home/derrota.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkZXJyb3RhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -14,10 +14,47 @@ body {
   padding: 10px;
 }
 
+main section h1{
+  text-align: center;
+  margin-top: 14%;
+  font-size: 5em;
+  margin-bottom: 2%;
+}
+main section a{
+  padding: 0.5%;
+text-decoration: none;
+margin-left: 48%;
+font-size: 1.2em;
+background-color: #aed6f1;
+border-radius: 5px;
+text-align: center;
+color: black;
+}
+main section{
+  margin-bottom: 2%;
+}
+main section div{
+  float: left;
+padding: 1%;
+border: 1px solid black;
+margin-left: 45%;
+margin-bottom: 1%;
+}
+main section div form{
+padding: 1%;
+
+
+}
+main section{
+  clear:both
+}
+
 
 footer {
+  clear: both;
   margin-top: 10px;
   padding: 10px;
   background-color: #f8f9fa;
   border-top: 1px solid #e9ecef;
+  
 }
