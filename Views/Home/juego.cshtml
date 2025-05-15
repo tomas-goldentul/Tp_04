@@ -14,14 +14,21 @@ else{
 </section>
 <section>
 <div>
+
 @if (ViewBag.letrasErradas != null){
+    int erradas = 0;
 foreach (char letraa in ViewBag.letrasErradas){
     <p style="display: inline; margin-right: 5px;">@letraa</p> 
+    erradas++;
 }
+ViewBag.erradas = erradas;
 }
 else{
     <p>No hay letras erradas</p>
 }
+</div>
+<div>
+    <img src="/imagenes/tipito@ViewBag.erradas.png" alt="">
 </div>
 </section>
 

@@ -9,6 +9,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "Z:\\prog\\Tp_04\\wwwroot\\imagenes\\Thumbs.db",
+      "PackagePath": "staticwebassets\\imagenes\\Thumbs.db"
+    },
+    {
+      "Id": "Z:\\prog\\Tp_04\\wwwroot\\imagenes\\logo.png",
+      "PackagePath": "staticwebassets\\imagenes\\logo.png"
+    },
+    {
+      "Id": "Z:\\prog\\Tp_04\\wwwroot\\imagenes\\logo.webp",
+      "PackagePath": "staticwebassets\\imagenes\\logo.webp"
+    },
+    {
+      "Id": "Z:\\prog\\Tp_04\\wwwroot\\imagenes\\pizarra.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\pizarra.jpg"
+    },
+    {
+      "Id": "Z:\\prog\\Tp_04\\wwwroot\\imagenes\\tiza.webp",
+      "PackagePath": "staticwebassets\\imagenes\\tiza.webp"
+    },
+    {
       "Id": "Z:\\prog\\Tp_04\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
