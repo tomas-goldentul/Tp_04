@@ -1,6 +1,4 @@
 
- 
-
 html {
   font-size: 14px;
   min-height: 100%;
@@ -50,22 +48,49 @@ main section{
   margin-bottom: 2%;
 }
 main section div{
+  width: 20%;
   float: left;
 padding: 1%;
 margin-left: 20%;
 margin-bottom: 1%;
 color: white;
 font-size: 2em;
+
 }
 main section div form{
-padding: 1%;
+padding: 0%;
+color: white;
+clear: both;
+margin-top: 0%;
+}
 
-
+main section div form input {
+  width: 60%;
+  border-radius: 6px;
+  color: white;
+  background:none;
+}
+main section div img{
+  width: 70%;
+  height: auto;
+  float: right;
+  margin-bottom: 10%;
 }
 main section{
   clear:both
 }
-
+.ultimosection{
+  margin-bottom: 19.5%;
+}
+.ultimodiv{
+  margin-bottom: 18.7%;
+  border: 3px dotted white;
+  border-radius: 8px;
+  padding: 2%;
+  padding-top: 0%;
+  text-align: center;
+  margin-left: 17%;
+}
 
 footer {
   clear: both;
