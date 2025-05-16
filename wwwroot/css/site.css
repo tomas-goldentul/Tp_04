@@ -34,7 +34,6 @@ main section h1{
   width: 30%;
   text-align: center;
   margin-left: 35%;
-
 }
 main section a{
   padding: 0.5%;
@@ -61,28 +60,33 @@ main section div form{
 padding: 0%;
 color: white;
 clear: both;
-margin-top: 0%;
+margin-top: 20%;
 }
 
 main section div form input {
-  width: 60%;
+  font-size: 0.8em;
+  width: 100%;
   border-radius: 6px;
   color: white;
   background:none;
+  border: 0px;
+  font-family: cursive;
+  text-align: left;
 }
 main section div img{
-  width: 70%;
+  width: 80%;
   height: auto;
   float: right;
-  margin-bottom: 10%;
+  margin-bottom: 50%;
 }
 main section{
   clear:both
 }
+
 .ultimosection{
   margin-bottom: 19.5%;
 }
-.ultimodiv{
+.ultimodiv{ 
   margin-bottom: 18.7%;
   border: 3px dotted white;
   border-radius: 8px;
@@ -91,11 +95,19 @@ main section{
   text-align: center;
   margin-left: 17%;
 }
+.poema{
+  font-size: 1.325em;
+  float: right;
+  margin-right: 15%;
+  border: 4px dotted white;
+  border-radius: 10px;
+}
 
 footer {
   clear: both;
   margin-top: 10px;
   padding: 10px;
-  background-color: #f8f9fa;
+  background: none;
+  color: white;
   
 }

@@ -16,9 +16,9 @@ else{
 <div>
 @{int erradas = 0;}
 @if (ViewBag.letrasErradas != null){
-    
+    <p>letras erradas:</p>
 foreach (char letraa in ViewBag.letrasErradas){
-    <p style="display: inline; margin-right: 5px;">@letraa</p> 
+    <p style="display: inline; margin-right: 5px;"> @letraa</p> 
     erradas++;
 }
 ViewBag.erradas = "/imagenes/tipito"+erradas+".png";
@@ -26,6 +26,14 @@ ViewBag.erradas = "/imagenes/tipito"+erradas+".png";
 else{
     <p>No hay letras erradas</p>
 }
+<form action='@Url.Action("ingresarLetra", "Home")' method="GET">
+<input type = "text" name = "letra" placeholder ="ingrese una letra">
+<input type = "submit" name = "Guardar">
+</form>
+<form action='@Url.Action("ingresarPalabra", "Home")' method="GET">
+<input type = "text" name = "palabra" placeholder ="arriesgar palabra">
+<input type = "submit" name = "Guardar">
+</form>
 </div>
 <div>
 @if(erradas == 0){
@@ -34,17 +42,5 @@ else{
 {
     <img src='@ViewBag.erradas' alt="">
 }
-</div>
-<div >
-<form action='@Url.Action("ingresarLetra", "Home")' method="GET">
-<input type = "text" name = "letra" placeholder ="ingrese una letra">
-<input type = "submit" name = "Guardar">
-</form>
-</div>
-<div >
-<form action='@Url.Action("ingresarPalabra", "Home")' method="GET">
-<input type = "text" name = "palabra" placeholder ="arriesgar palabra">
-<input type = "submit" name = "Guardar">
-</form>
 </div>
 </section>
